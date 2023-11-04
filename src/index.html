@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="font-Montserrat">
     <header>
         <nav>
             <div id="tabBar"></div>
@@ -20,8 +20,8 @@
         <section class="w-full h-screen">
             <div id="home">
                 <div class="w-full h-full flex flex-col absolute space-y-72 p-6 items-center">
-                    <input class=" w-72 p-3 outline-none rounded-full shadow-sm " type="search" name="" id="" placeholder="San Francisco">
-                    <button class="w-32 bg-white text-sm text-primary font-semibold p-2 rounded-full shadow-sm">Explore More</button>
+                    <input class=" w-[270px] p-3 outline-none rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-[285px]" type="search" name="" id="" placeholder="San Francisco">
+                    <button class="w-32 bg-white text-sm text-primary font-semibold p-2 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-100">Explore More</button>
                 </div>
                 <div class="w-full h-3/4">
                     <div class="w-full h-full">
@@ -30,45 +30,45 @@
                 </div>
             </div>
             <div id="recomendations" class="p-6">
-                <p class="font-semibold text-primary pb-6">Our Recomendations</p>
-                <div class="flex overflow-x-scroll overscroll-x-contain gap-x-3">
-                    <div class="shadow-md">
-                        <div class="w-[192px] h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                <p class="text-xl font-semibold text-primary pb-6">Our Recomendations</p>
+                <div class="w-auto h-[300px] flex items-center overflow-x-auto overscroll-x-contain gap-x-3 overflow-y-hidden pt-2">
+                    <div class="card">
+                        <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
                         <div class=" w-full h-2/5 bg-secondary rounded-b-lg">
                             <h3 class="text-white font-bold px-4 py-2">Norway</h3>
                             <p class="text-white text-sm px-4">Beautiful landscape</p>
                         </div>
                     </div>
-                    <div class="shadow-md">
-                        <div class="w-[192px] h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+                    <div class="card">
+                        <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
                         <div class=" w-full h-2/5 bg-white rounded-b-lg">
                             <h3 class="text-tertiary font-bold px-4 py-2">New York</h3>
                             <p class="text-tertiary text-sm px-4">Concrete jungle</p>
                         </div>
                     </div>
-                    <div class="shadow-md">
-                        <div class="w-[192px] h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
+                    <div class="card">
+                        <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
                         <div class=" h-2/5 bg-secondary rounded-b-lg">
                             <h3 class="text-white font-bold px-4 py-2">Yosemite</h3>
                             <p class="text-white text-sm px-4">A break from the world</p>
                         </div>
                     </div>
-                    <div class="w-48 h-64 shadow-md">
-                        <div class="w-[192px] h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+                    <div class="card">
+                        <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
                         <div class=" w-full h-2/5 bg-white rounded-b-lg">
                             <h3 class="text-tertiary font-bold px-4 py-2">Seatle</h3>
                             <p class="text-tertiary text-sm px-4">Big City</p>
                         </div>
                     </div>
-                    <div class="shadow-md">
-                        <div class="w-[192px] h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                    <div class="card">
+                        <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
                         <div class=" h-2/5 bg-secondary rounded-b-lg">
                             <h3 class="text-white font-bold px-4 py-2">Switzerland</h3>
                             <p class="text-white text-sm px-4">Big City</p>
                         </div>
                     </div>
-                    <div class="w-48 h-64 shadow-md">
-                        <div class="w-[192px] h-3/5 rounded-t-lg bg-europe bg-cover"></div>
+                    <div class="card">
+                        <div class="w-full h-3/5 rounded-t-lg bg-europe bg-cover"></div>
                         <div class=" w-full h-2/5 bg-white rounded-b-lg">
                             <h3 class="text-tertiary font-bold px-4 py-2">Edinburgh</h3>
                             <p class="text-tertiary text-sm px-4">Castles and medieval times</p>
