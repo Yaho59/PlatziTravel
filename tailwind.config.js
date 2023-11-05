@@ -18,7 +18,7 @@ module.exports = {
     extend: {
       backgroundImage: { 
         'sanFrancisco': "url('../src/img/sanFrancisco.jpg')", 
-        'sanFranciscoDesktop': "url('./src/img/sanFranciscoDesktop.jpg')", 
+        'sanFranciscoDesktop': "url('../src/img/sanFranciscoDesktop.jpg')", 
         'yosemite': "url('../src/img/yosemite.jpg')", 
         'LA': "url('../src/img/LA.jpg')", 
         'seattle': "url('../src/img/seattle.jpg')", 

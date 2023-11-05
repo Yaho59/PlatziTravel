@@ -19,15 +19,17 @@
     <main>
         <section class="w-full h-auto">
             <div id="home">
-                <div class="w-full h-full flex flex-col absolute space-y-72 p-6 items-center">
-                    <input class=" w-[270px] p-3 outline-none rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-[285px]" type="search" name="" id="" placeholder="San Francisco">
-                    <button class="w-32 bg-white text-sm text-primary font-semibold p-2 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-100">Explore More</button>
-                </div>
-                <div class="w-full h-3/4">
-                    <div class="w-full h-full">
-                        <img src="./img/sanFrancisco.jpg" alt="">
+                <div class="w-full h-full flex flex-col absolute space-y-72 p-6 items-center lg:space-y-0 lg:justify-start lg:items-start lg:pt-36">
+                    <input class=" w-[270px] p-3 outline-none rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-[285px] lg:hidden" type="search" name="" id="" placeholder="San Francisco">
+                    <div class="hidden h-auto lg:w-2/5 lg:flex lg:pb-6">
+                        <p class="font-bold text-4xl">Find More Locations like this</p>
                     </div>
+                    <button class="w-32 bg-white text-sm text-primary font-semibold p-2 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-100 lg:ml-16">Explore More</button>
                 </div>
+                
+                    <div class="w-full h-full  lg:h-[400px] lg:bg-cover lg:bg-sanFranciscoDesktop lg:bg-center">
+                        <img src="./img/sanFrancisco.jpg" alt="" class="lg:hidden">
+                    </div>
             </div>
             <div id="recomendations" class="p-6">
                 <p class="text-xl font-semibold text-primary pb-6">Our Recomendations</p>
@@ -61,7 +63,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                        <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover bg-center"></div>
                         <div class=" h-2/5 bg-secondary rounded-b-lg">
                             <h3 class="text-white font-bold px-4 py-2">Switzerland</h3>
                             <p class="text-white text-sm px-4">Big City</p>
@@ -134,7 +136,7 @@
             <img src="./icons/instagram 1.svg" alt="">
         </div>
     </footer>
-    <div id="tabBar" class="w-full h-11 p-6 bg-white fixed left-0 bottom-0 shadow-md flex items-center justify-center gap-7">
+    <div id="tabBar" class="w-full h-11 p-6 bg-white fixed left-0 bottom-0 shadow-md flex items-center justify-center gap-7 lg:hidden">
        <a href="#home"><img src="./icons/home.svg" alt=""></a>
        <a href=""><img src="./icons/Search.svg" alt=""></a>
        <a href="recomendations"><img src="./icons/heart.svg" alt=""></a>
