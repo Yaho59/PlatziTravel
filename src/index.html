@@ -1,137 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Platzi Travel</title>
 </head>
-<body class="font-Montserrat">
+
+<body class="font-Montserrat dark:bg-gray-900">
     <header>
-        <nav class=" w-full h-14 hidden bg-white  p-6 lg:flex items-center gap-8 justify-between">
-           <div class="h-auto w-auto">
-                <p class="text-xl text-primary font-black">Platzi Travel</p>
-           </div>
-           <div class="flex items-center gap-6">
-            <a href="#recomendations" class="font-bold text-base text-primary hover:text-secondary">Locations</a>
-            <a href="#featured_rentals" class="font-bold text-base text-primary hover:text-secondary">Stays</a>
-            <a href="#faqs" class="font-bold text-base text-primary hover:text-secondary">FAQS</a>
-            <a href="#aboutUs" class="font-bold text-base text-primary hover:text-secondary">About Us</a>
-           </div>
-           <div class="flex items-center gap-4">
-            <a href=""><img src="./icons/Search.svg" alt="k"></a>
-            <a href=""><img src="./icons/moon.svg" alt="k"></a>
-            <a href=""><img src="./icons/user.svg" alt="k"></a>
-           </div> 
+        <nav class=" w-full h-14 hidden bg-white  p-6 lg:flex items-center gap-8 justify-between dark:bg-gray-800">
+            <div class="h-auto w-auto">
+                <p class="text-xl text-primary font-black dark:text-white">Platzi Travel</p>
+            </div>
+            <div class="flex items-center gap-6 ">
+                <a href="#recomendations"
+                    class="font-bold text-base text-primary hover:text-secondary dark:text-white">Locations</a>
+                <a href="#featured_rentals"
+                    class="font-bold text-base text-primary hover:text-secondary dark:text-white">Stays</a>
+                <a href="#faqs" class="font-bold text-base text-primary hover:text-secondary dark:text-white">FAQS</a>
+                <a href="#aboutUs" class="font-bold text-base text-primary hover:text-secondary dark:text-white">About
+                    Us</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href=""><img src="./icons/Search.svg" alt="k"></a>
+                <button id="toggle">
+                    <img src="./icons/moon.svg" alt="k">
+                </button>
+                <a href=""><img src="./icons/user.svg" alt="k"></a>
+            </div>
         </nav>
     </header>
     <main>
         <section class="w-full h-auto">
             <div id="home">
-                <div class="w-full h-full flex flex-col absolute space-y-72 p-6 items-center lg:space-y-0 lg:justify-start lg:items-start lg:pt-36">
-                    <input class=" w-[270px] p-3 outline-none rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-[285px] lg:hidden" type="search" name="" id="" placeholder="San Francisco">
+                <div
+                    class="w-full h-full flex flex-col absolute space-y-72 p-6 items-center lg:space-y-0 lg:justify-start lg:items-start lg:pt-36">
+                    <input
+                        class=" w-[270px] p-3 outline-none rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-[285px] lg:hidden"
+                        type="search" name="" id="" placeholder="San Francisco">
                     <div class="hidden h-auto lg:w-2/5 lg:flex lg:pb-6">
                         <p class="font-bold text-4xl">Find More Locations like this</p>
                     </div>
-                    <button class="w-32 bg-white text-sm text-primary font-semibold p-2 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-100 lg:ml-16">Explore More</button>
+                    <button
+                        class="w-32 bg-white text-sm text-primary font-semibold p-2 rounded-full shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:translate-y-1 hover:scale-100 lg:ml-16">Explore
+                        More</button>
                 </div>
-                
-                    <div class="w-full h-full  lg:h-[450px] lg:bg-cover lg:bg-sanFranciscoDesktop lg:bg-center">
-                        <img src="./img/sanFrancisco.jpg" alt="" class="lg:hidden">
-                    </div>
+
+                <div class="w-full h-full  lg:h-[450px] lg:bg-cover lg:bg-sanFranciscoDesktop lg:bg-center">
+                    <img src="./img/sanFrancisco.jpg" alt="" class="lg:hidden">
+                </div>
             </div>
             <div id="recomendations" class="p-6">
-                <p class="text-xl font-semibold text-primary pb-6">Our Recomendations</p>
-                <div class="w-auto h-[300px] flex items-center overflow-x-auto overscroll-x-contain gap-x-3 overflow-y-hidden pt-2">
+                <p class="text-xl font-semibold text-primary pb-6 dark:text-white">Our Recomendations</p>
+                <div
+                    class="w-auto h-[300px] flex items-center overflow-x-auto overscroll-x-contain gap-x-3 overflow-y-hidden pt-2">
                     <div class="card">
                         <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
-                        <div class=" w-full h-2/5 bg-secondary rounded-b-lg">
+                        <div class=" w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                             <h3 class="text-white font-bold px-4 py-2">Norway</h3>
                             <p class="text-white text-sm px-4">Beautiful landscape</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
-                        <div class=" w-full h-2/5 bg-white rounded-b-lg">
-                            <h3 class="text-tertiary font-bold px-4 py-2">New York</h3>
-                            <p class="text-tertiary text-sm px-4">Concrete jungle</p>
+                        <div class=" w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                            <h3 class="text-tertiary font-bold px-4 py-2 dark:text-white">New York</h3>
+                            <p class="text-tertiary text-sm px-4 dark:text-white">Concrete jungle</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover"></div>
-                        <div class=" h-2/5 bg-secondary rounded-b-lg">
+                        <div class=" h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                             <h3 class="text-white font-bold px-4 py-2">Yosemite</h3>
                             <p class="text-white text-sm px-4">A break from the world</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
-                        <div class=" w-full h-2/5 bg-white rounded-b-lg">
-                            <h3 class="text-tertiary font-bold px-4 py-2">Seatle</h3>
-                            <p class="text-tertiary text-sm px-4">Big City</p>
+                        <div class=" w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                            <h3 class="text-tertiary font-bold px-4 py-2 dark:text-white">Seatle</h3>
+                            <p class="text-tertiary text-sm px-4 dark:text-white">Big City</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover bg-center"></div>
-                        <div class=" h-2/5 bg-secondary rounded-b-lg">
+                        <div class=" h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                             <h3 class="text-white font-bold px-4 py-2">Switzerland</h3>
                             <p class="text-white text-sm px-4">Big City</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="w-full h-3/5 rounded-t-lg bg-europe bg-cover bg-center"></div>
-                        <div class=" w-full h-2/5 bg-white rounded-b-lg">
-                            <h3 class="text-tertiary font-bold px-4 py-2">Edinburgh</h3>
-                            <p class="text-tertiary text-sm px-4">Castles and medieval times</p>
+                        <div class=" w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                            <h3 class="text-tertiary font-bold px-4 py-2 dark:text-white">Edinburgh</h3>
+                            <p class="text-tertiary text-sm px-4 dark:text-white">Castles and medieval times</p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div id="featured_rentals" class="p-6 w-full h-auto">
-                <p class="text-xl font-semibold text-primary pb-6">Trending Styles</p>
-                <div class="w-full h-auto flex flex-col gap-3 justify-center lg:grid lg:grid-cols-[minmax(200px,_400px)_minmax(200px,_400px)_minmax(200px,_400px)] lg:auto-rows-auto">
+                <p class="text-xl font-semibold text-primary pb-6 dark:text-white">Trending Styles</p>
+                <div
+                    class="w-full h-auto flex flex-col gap-3 justify-center lg:grid lg:grid-cols-[minmax(200px,_400px)_minmax(200px,_400px)_minmax(200px,_400px)] lg:auto-rows-auto">
 
-                    <div class="w-full h-96 bg-chicago bg-cover bg-center rounded-xl lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-5  lg:h-[590px]">
+                    <div
+                        class="w-full h-96 bg-chicago bg-cover bg-center rounded-xl lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-5  lg:h-[590px]">
                         <p class="cardTitle">Chicago</p>
                         <p class="text-sm pl-8 text-white mr-24">2 rooms, bathroom and kitchen.</p>
                     </div>
-                    <div class="w-full h-96 bg-LA bg-cover bg-center rounded-xl lg:col-start-1 lg:col-end-2 lg:row-start-5 lg:row-end-7 lg:h-[570px]">
+                    <div
+                        class="w-full h-96 bg-LA bg-cover bg-center rounded-xl lg:col-start-1 lg:col-end-2 lg:row-start-5 lg:row-end-7 lg:h-[570px]">
                         <p class="cardTitle">Los Angeles</p>
-                        <p class="text-sm pl-8 text-white mr-24">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
+                        <p class="text-sm pl-8 text-white mr-24">4 rooms, 3 bathrooms, kitchen and private pool.</p>
                     </div>
-                    <div class="w-full h-96 bg-miami bg-cover bg-center rounded-xl lg:col-start-2 lg:col-end-4 lg:row-start-5 lg:row-end-6 lg:h-[275px]">
+                    <div
+                        class="w-full h-96 bg-miami bg-cover bg-center rounded-xl lg:col-start-2 lg:col-end-4 lg:row-start-5 lg:row-end-6 lg:h-[275px]">
                         <p class="cardTitle">Miami</p>
                         <p class="text-sm pl-8 text-white mr-24">3 rooms, 2 bathrooms, kitchen and amazing sea view.</p>
                     </div>
-                    <div class="w-full h-96 bg-bali bg-cover bg-center rounded-xl lg:col-start-2 lg:col-end-4 lg:row-start-6 lg:row-end-7 lg:h-[275px]">
+                    <div
+                        class="w-full h-96 bg-bali bg-cover bg-center rounded-xl lg:col-start-2 lg:col-end-4 lg:row-start-6 lg:row-end-7 lg:h-[275px]">
                         <p class="cardTitle">Bali</p>
                         <p class="text-sm pl-8 text-white mr-24">2 rooms, 2 bathrooms, kitchen and private pool.</p>
                     </div>
                 </div>
             </div>
             <div id="faqs" class="w-full h-auto p-6">
-                <p class="text-xl font-semibold text-primary pb-6">FAQs</p> 
+                <p class="text-xl font-semibold text-primary pb-6 dark:text-white">FAQs</p>
                 <div class="w-full h-auto flex flex-col gap-3 items-start justify-center">
                     <div>
-                        <p class="text-base text-primary font-medium">Payment Methods</p>
-                        <p class="text-sm pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                        <p class="text-base text-primary font-semibold dark:text-white">Payment Methods</p>
+                        <p class="text-sm pt-2 dark:text-gray-300">We accept VISA, MasterCard, American Express, Paypal
+                            and Binance</p>
                     </div>
                     <div>
-                        <p class="text-base text-primary font-medium">Long Stays</p>
-                        <p class="text-sm pt-2">We offer accommodations and services for longer stays. Through our program for very important residents</p>
+                        <p class="text-base text-primary font-semibold dark:text-white">Long Stays</p>
+                        <p class="text-sm pt-2 dark:text-gray-300">We offer accommodations and services for longer
+                            stays. Through our program for very important residents</p>
                     </div>
                     <div>
-                        <p class="text-base text-primary font-medium">Cancellation Policy</p>
-                        <p class="text-sm pt-2">It takes 24 hours to process your cancellation</p>
+                        <p class="text-base text-primary font-semibold dark:text-white">Cancellation Policy</p>
+                        <p class="text-sm pt-2 dark:text-gray-300">It takes 24 hours to process your cancellation</p>
                     </div>
                     <div>
-                        <p class="text-base text-primary font-medium">Make a Claim</p>
-                        <p class="text-sm pt-2">Talk to us and we'll solve your problems in less than 24 hours</p>
+                        <p class="text-base text-primary font-semibold dark:text-white">Make a Claim</p>
+                        <p class="text-sm pt-2 dark:text-gray-300">Talk to us and we'll solve your problems in less than
+                            24 hours</p>
                     </div>
                 </div>
             </div>
@@ -150,12 +171,29 @@
             <img src="./icons/instagram 1.svg" alt="">
         </div>
     </footer>
-    <div id="tabBar" class="w-full h-11 p-6 bg-white fixed left-0 bottom-0 shadow-md flex items-center justify-center gap-7 lg:hidden">
-       <a href="#home"><img src="./icons/home.svg" alt=""></a>
-       <a href=""><img src="./icons/Search.svg" alt=""></a>
-       <a href="recomendations"><img src="./icons/heart.svg" alt=""></a>
-       <a href=""><img src="./icons/user.svg" alt=""/></a>
-       <button><img src="./icons/moon.svg" alt=""></button>
+    <div id="tabBar" class="w-full h-11 p-6 bg-white fixed left-0 bottom-0 shadow-md flex items-center justify-center gap-7 lg:hidden dark:bg-gray-800">
+        <a href="#home"><img src="./icons/home.svg" alt=""></a>
+        <a href=""><img src="./icons/Search.svg" alt=""></a>
+        <a href="recomendations"><img src="./icons/heart.svg" alt=""></a>
+        <a href=""><img src="./icons/user.svg" alt="" /></a>
+        <button id="toggle-sm">
+            <img src="./icons/moon.svg" alt="">
+        </button>
     </div>
+    <script>
+		const htmlElement = document.querySelector("html")
+		const toggleButton = document.querySelector("#toggle")
+		const toggleButtonSm = document.querySelector("#toggle-sm")
+
+		toggleButton.addEventListener("click", () => toggleDarkMode())
+		toggleButtonSm.addEventListener("click", () => toggleDarkMode())
+
+		const toggleDarkMode = () => {
+			htmlElement.classList.contains("dark") ? 
+				htmlElement.classList.remove("dark") : 
+				htmlElement.classList.add("dark")
+		}
+	</script>
 </body>
+
 </html>
