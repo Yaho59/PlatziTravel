@@ -749,43 +749,43 @@ video {
 }
 
 .bg-LA {
-  background-image: url('../src/img/LA.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/LA.jpg?alt=media&token=472b39bc-a882-4c55-b641-aa3ed7399cec');
 }
 
 .bg-bali {
-  background-image: url('../src/img/bali.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/bali.jpg?alt=media&token=5a729e20-328b-4f9b-9253-c27472646b1c');
 }
 
 .bg-chicago {
-  background-image: url('../src/img/chicago.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/chicago.jpg?alt=media&token=9f4f68a1-6529-426e-bdc8-bdca5c4b06be');
 }
 
 .bg-europe {
-  background-image: url('../src/img/europe.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/europe.jpg?alt=media&token=f4ec185b-dbb7-4766-af76-b9bbde03c97d');
 }
 
 .bg-miami {
-  background-image: url('../src/img/miami.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/miami.jpg?alt=media&token=731b4ca8-58e5-40df-b27e-d458a9c41c4c');
 }
 
 .bg-new_york {
-  background-image: url('../src/img/new_york.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/new_york.jpg?alt=media&token=176e1fe8-b2e7-461e-a9c3-249ba4f46f9d');
 }
 
 .bg-norway {
-  background-image: url('../src/img/norway.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/norway.jpg?alt=media&token=20e526a2-4eb9-4e97-976d-7448ca26ce15');
 }
 
 .bg-seattle {
-  background-image: url('../src/img/seattle.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/seattle.jpg?alt=media&token=0f8630dd-0d50-4025-8bb5-3ec2bf0d52e1');
 }
 
 .bg-switzerland {
-  background-image: url('../src/img/switzerland.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/switzerland.jpg?alt=media&token=a9ba936c-e324-41d8-bd99-0ab18f65aef6');
 }
 
 .bg-yosemite {
-  background-image: url('../src/img/yosemite.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/yosemite.jpg?alt=media&token=c476eb7d-5dbc-42ad-ab2f-d587daa9075b');
 }
 
 .bg-cover {
@@ -1105,7 +1105,7 @@ video {
   }
 
   .lg\:bg-sanFranciscoDesktop {
-    background-image: url('../src/img/sanFranciscoDesktop.jpg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/travel-8ec65.appspot.com/o/sanFranciscoDesktop.jpg?alt=media&token=a56b6363-0a4a-4976-a9a7-0a936c510aac');
   }
 
   .lg\:bg-cover {
