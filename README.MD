@@ -11,4 +11,4 @@ Este proyecto fue desarrollado en un curso de [platzi](https://platzi.com/cursos
  - Mobile first.
 
 ## Links de proyecto
-Eco-Store: [enter link description here](https://yaho59.github.io/PlatziTravel/)
+Platzi-Travel: [enter link description here](https://yaho59.github.io/PlatziTravel/)
